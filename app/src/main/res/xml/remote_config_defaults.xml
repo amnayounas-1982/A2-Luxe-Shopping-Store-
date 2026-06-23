@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <defaultsMap>
+        <entry>
+            <key>app_theme</key>
+            <value>light</value>
+        </entry>
+        <entry>
+            <key>app_language</key>
+            <value>en</value>
+        </entry>
+    </defaultsMap>

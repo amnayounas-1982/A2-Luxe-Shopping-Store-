@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/Black"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_marginTop="@dimen/_20sdp"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_gravity="center"
+            app:shapeAppearanceOverlay="@style/RoundedBottomApp"
+            android:src="@drawable/img"
+            android:scaleType="centerCrop" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/str_user_name"
+        android:gravity="center"
+        android:textColor="@color/White"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:textStyle="bold"
+        android:textSize="@dimen/_14sdp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:gravity="center"
+        android:text="@string/str_Email"
+        android:textColor="@color/White"
+        android:textSize="@dimen/_11sdp"
+        android:layout_marginBottom="@dimen/_12sdp"
+        android:textStyle="bold" />
+
+</LinearLayout>

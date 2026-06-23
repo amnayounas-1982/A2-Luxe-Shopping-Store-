@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    tools:context=".activity.OwnerHomeActivity"
+    >
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"
+        android:background="@color/Black"
+        android:fitsSystemWindows="true">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/tb_add_data"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/Black"
+            app:navigationIcon="@drawable/ic_arrow_back"
+            app:title="@string/str_add_your_item"
+            app:titleTextColor="@color/White" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_marginTop="@dimen/_18sdp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/_16sdp">
+
+            <ImageView
+                android:id="@+id/iv_camera"
+                android:layout_width="@dimen/_140sdp"
+                android:layout_height="@dimen/_130sdp"
+                android:background="@drawable/custum_rounded"
+                android:importantForAccessibility="no"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_launcher_foreground"
+                tools:ignore="ImageContrastCheck" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_camera"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:background="@drawable/custum_rounded"
+                    android:backgroundTint="@color/Black"
+                    android:text="@string/str_open_camera"
+                    android:textColor="@color/White"
+                    tools:ignore="TextContrastCheck,VisualLintButtonSize" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_gallery"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/custum_rounded"
+                    android:text="@string/str_open_gallery"
+                    android:textColor="@color/White"
+                    android:backgroundTint="@color/Black"
+                    tools:ignore="TextContrastCheck,VisualLintButtonSize" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/et_title"
+                android:layout_width="@dimen/_260sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@drawable/custum_rounded"
+                android:hint="@string/str_enter_title_of_item"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:textSize="@dimen/_11ssp"
+                tools:ignore="Autofill,TextContrastCheck,VisualLintTextFieldSize" />
+
+            <EditText
+                android:id="@+id/et_rating"
+                android:layout_width="@dimen/_260sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:background="@drawable/custum_rounded"
+                android:hint="@string/str_enter_rating_of_item"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="numberDecimal"
+                android:maxLength="3"
+                android:textSize="@dimen/_11ssp"
+                tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
+
+            <EditText
+                android:id="@+id/et_prize"
+                android:layout_width="@dimen/_260sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:background="@drawable/custum_rounded"
+                android:hint="@string/str_enter_a_prize_of_item"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="numberDecimal"
+                android:maxLength="6"
+                android:textSize="@dimen/_11ssp"
+                tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/dropdown_layout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="@dimen/_260sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:imeOptions="actionNext"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:hint="@string/str_select_item_category">
+
+                <AutoCompleteTextView
+                    android:id="@+id/auto_dropdown_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/custum_rounded"
+                    android:clickable="true"
+                    android:imeOptions="actionNext"
+                    android:cursorVisible="false"
+                    android:focusable="true"
+                    android:inputType="none"
+                    android:textSize="@dimen/_11ssp"
+                    tools:ignore="SpeakableTextPresentCheck,VisualLintTextFieldSize" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_add"
+                android:layout_width="@dimen/_160sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/custum_rounded"
+                android:text="@string/str_add_item"
+                android:backgroundTint="@color/Black"
+                android:textColor="@color/White"
+                tools:ignore="VisualLintButtonSize" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

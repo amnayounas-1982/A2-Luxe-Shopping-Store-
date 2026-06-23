@@ -1,0 +1,83 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/_8ssp"
+    android:layout_marginStart="@dimen/_2ssp"
+    android:layout_marginTop="@dimen/_8sdp"
+    android:layout_marginEnd="@dimen/_2sdp"
+    app:cardCornerRadius="@dimen/_8sdp"
+    android:background="@color/White"
+    app:cardElevation="@dimen/_3sdp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/_4sdp"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/iv_item1"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img"
+            app:shapeAppearanceOverlay="@style/RoundedBottomAppBarShape"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/str_modern_light_clothes"
+            android:textStyle="bold"
+            android:textColor="@color/onBackground"
+            android:textSize="@dimen/_12sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            app:layout_constraintStart_toEndOf="@id/iv_item1"
+            app:layout_constraintTop_toTopOf="@id/iv_item1"
+            app:layout_constraintEnd_toStartOf="@id/ib_delete" />
+
+        <TextView
+            android:id="@+id/tv_rating"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:text="@string/str_dress_modern"
+            android:textSize="@dimen/_10sdp"
+            android:textColor="@color/ChineseSilver"
+            app:layout_constraintEnd_toStartOf="@id/ib_delete"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/tv_title"
+            app:layout_constraintTop_toBottomOf="@id/tv_title" />
+
+        <Button
+            android:id="@+id/ib_delete"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_36sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:layout_marginBottom="@dimen/_2sdp"
+            android:backgroundTint="@color/Black"
+            android:text="@string/str_cancel"
+            android:textColor="@color/White"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_item_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str__212_99"
+            android:textStyle="bold"
+            android:textColor="@color/onBackground"
+            android:textSize="@dimen/_12sdp"
+            android:layout_marginBottom="@dimen/_8sdp"
+            app:layout_constraintStart_toStartOf="@id/tv_title"
+            app:layout_constraintTop_toBottomOf="@id/tv_rating" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

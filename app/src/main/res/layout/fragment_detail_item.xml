@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/_18sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_320sdp"
+                app:cardCornerRadius="@dimen/_16sdp">
+
+                <ImageView
+                    android:id="@+id/iv_model"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/img" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/ib_back"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_margin="@dimen/_12sdp"
+                    android:background="@drawable/custom_rounded_nav"
+                    android:src="@drawable/ic_arrow_back"
+                    app:tint="@color/Black" />
+
+                    <View
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="match_parent">
+
+                    </View>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_37sdp"
+            android:layout_marginTop="@dimen/_12sdp">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/str_light_dress_bless"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/_16sdp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2ssp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_title">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_star"
+                    android:textColor="@color/ChineseSilver"
+                    android:textSize="@dimen/_12sdp" />
+
+                <TextView
+                    android:id="@+id/tv_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:text="@string/str__5_0"
+                    android:textColor="@color/ChineseSilver"
+                    android:textSize="@dimen/_12sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_3sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:gravity="end"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <ImageButton
+                    android:id="@+id/iv_minus"
+                    android:layout_width="@dimen/_26sdp"
+                    android:layout_height="@dimen/_26sdp"
+                    android:background="@drawable/custom_rounded_nav"
+                    android:src="@drawable/ic_minus"
+                    app:tint="@color/Black" />
+
+                <TextView
+                    android:id="@+id/tv_quantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_5sdp"
+                    android:text="@string/str__1"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/_14sdp" />
+
+                <ImageButton
+                    android:id="@+id/iv_plus"
+                    android:layout_width="@dimen/_26sdp"
+                    android:layout_height="@dimen/_26sdp"
+                    android:background="@drawable/custom_rounded_nav"
+                    android:src="@drawable/ic_plus"
+                    app:tint="@color/Black" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:text="@string/str_its_simple_and_elegant_shape_makes_it_perfect_for_those_of_you_who_like_minimalist_clothes"
+            android:textColor="@color/ChineseSilver"
+            android:textSize="@dimen/_12sdp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_12sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_9sdp"
+            android:text="@string/str_choose_size"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/_9sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_9sdp"
+            android:text="@string/str_color"
+            android:layout_marginStart="@dimen/_118sdp"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/_9sdp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_28sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_small"
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:backgroundTint="@color/Black"
+                android:textColor="@color/White"
+                android:background="@drawable/custom_rounded_nav"
+                android:text="@string/str_s" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_medium"
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_marginStart="@dimen/_8ssp"
+                android:background="@drawable/custom_rounded_nav"
+                android:text="@string/str_m" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_large"
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_marginStart="@dimen/_8ssp"
+                android:background="@drawable/custom_rounded_nav"
+                android:text="@string/str_l" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_extra_large"
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_marginStart="@dimen/_8ssp"
+                android:background="@drawable/custom_rounded_nav"
+                android:text="@string/str_xl" />
+
+            <View
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_marginStart="@dimen/_50sdp"
+                android:background="@drawable/custom_rounded_nav"
+                android:backgroundTint="@color/Blue" />
+
+            <View
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:background="@drawable/custom_rounded_nav"
+                android:backgroundTint="@color/LightSilver" />
+
+            <View
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:backgroundTint="@color/Black"
+                android:background="@drawable/custom_rounded_nav" />
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/pb_progress"
+            android:progressTint="@color/Black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <Button
+            android:id="@+id/btn_cart"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:backgroundTint="@color/Black"
+            android:text="@string/str_add_to_cart"
+            android:textColor="@color/White"
+            android:textSize="@dimen/_15sdp" >
+        </Button>
+
+    </LinearLayout>
+</ScrollView>

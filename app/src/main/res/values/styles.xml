@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="RoundedBottomAppBar" parent="Widget.MaterialComponents.BottomAppBar">
+        <item name="shapeAppearanceOverlay">@style/RoundedBottomAppBarShape</item>
+    </style>
+
+    <style name="RoundedBottomAppBarShape">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16%</item> <!-- Pill shape -->
+    </style>
+
+    <style name="RoundedBottomApp">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item> <!-- Pill shape -->
+    </style>
+</resources>

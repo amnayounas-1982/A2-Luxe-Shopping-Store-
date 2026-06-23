@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#000000</color>
+    <color name="onPrimary">#FFFFFF</color>
+
+    <color name="background">#FFFFFF</color>
+    <color name="onBackground">#000000</color>
+
+    <color name="statusBarColor">#FFFFFF</color>
+
+    <color name="iconTint">#000000</color>
+
+    <color name="buttonSelected">#000000</color>
+
+    <color name="SearchBar">#FFFFFF</color>
+
+
+
+
+
+    <!-- Extra brand/neutral colors -->
+    <color name="Black">#FF000000</color>
+    <color name="White">#FFFFFFFF</color>
+    <color name="ChineseSilver">#CCCCCC</color>
+    <color name="Blue">#0E7ACE</color>
+    <color name="LightSilver">#D7D7D8</color>
+    <color name="DustyGray">#999999</color>
+    <color name="MediumDarkGray">#555555</color>
+</resources>

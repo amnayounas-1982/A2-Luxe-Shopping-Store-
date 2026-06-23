@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/custom_nav_graph"
+    app:startDestination="@id/fragment_home">
+
+    <fragment
+        android:id="@+id/fragment_home"
+        android:name="com.example.snapstore.fragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_detailItemFragment"
+            app:destination="@id/detailItemFragment"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailItemFragment"
+        tools:layout="@layout/fragment_detail_item"
+        android:name="com.example.snapstore.fragment.DetailItemFragment">
+        <argument
+            android:name="title"
+            app:argType="string" />
+        <argument
+            android:name="imageUrl"
+            app:argType="string" />
+
+        <argument
+            android:name="rating"
+            app:argType="string" />
+        <argument
+            android:name="prize"
+            app:argType="string" />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/fragment_favorite"
+        tools:layout="@layout/fragment_favorite"
+        android:name="com.example.snapstore.fragment.FavoriteFragment"
+        android:label="Favorite" />
+
+    <fragment
+        android:id="@+id/fragment_profile"
+        tools:layout="@layout/fragment_profile"
+        android:name="com.example.snapstore.fragment.ProfileFragment"
+        android:label="Profile" />
+
+    <fragment
+        android:id="@+id/fragment_cart"
+        tools:layout="@layout/fragment_cart"
+        android:name="com.example.snapstore.fragment.CartFragment"
+        android:label="Profile" />
+
+
+
+
+</navigation>

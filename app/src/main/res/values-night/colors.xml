@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#FFFFFF</color>
+    <color name="onPrimary">#000000</color>
+
+    <color name="background">#000000</color>
+    <color name="onBackground">#FFFFFF</color>
+
+    <color name="statusBarColor">#121212</color>
+
+    <color name="iconTint">#FFFFFF</color>
+
+    <color name="buttonSelected">#555555</color>
+
+    <color name="SearchBar">#555555</color>
+
+
+
+
+</resources>
